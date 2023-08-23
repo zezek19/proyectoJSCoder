@@ -16,7 +16,7 @@ const getProductos = async () => {
     content.innerHTML = `
       <img src="${producto.image}">
       <h3>${producto.modelo}</h3>
-      <p class="price">${producto.precio}</p>
+      <p class="price"> $USD${producto.precio}</p>
       `;
   
     shopContent.append(content);

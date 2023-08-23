@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /*HEADER*/
 
 .ver-carrito{
@@ -25,16 +26,18 @@
 
 .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    min-width: 300px;
+    min-height: 200px;
     margin: auto;
     text-align: center;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    border-radius: 10px;
 }
 
 .card > img {
-    margin: 10px 20px;
-    width: 90%;
-    height: 250px;
+    width: 300px;
+    object-fit: fill;
+    margin-bottom: 10px;
+    
 }
 
 .price{
@@ -52,6 +55,8 @@
     cursor: pointer;
     width: 100%;
     font-size: 18px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .card button:hover{
@@ -64,29 +69,29 @@
     width: 80%;
     margin: 0 10%; 
     max-height: 108vh;
+    border-radius: 8px;
+
+    background-color: #0a0909;
     color: #fff;
-    background-color: #121212;
+
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+
+    scrollbar-color: none;
+
     /*TOP*/
     position: fixed;
     overflow: auto;
     z-index: 9;
-    top: 12vh;
-    scrollbar-color: none;
+    top: 7vh;
+
 }
 
 
 .modal-container::-webkit-scrollbar{
     display: none;
-}
-
-.modal-container{
-    display: flex;
-    justify-content: space-around;
-    background-color: #0a0909;
-    color: #fff;
 }
 
 
@@ -107,7 +112,7 @@
     cursor: pointer;
 }
 
-.modal-container > .modal-content{
+.modal-content{
     background-color: #0a0909;
     display: flex;
     flex-direction: row;
@@ -118,8 +123,9 @@
 }
 
 
-.modal-container > div > img {
-    width: 30%
+.modal-image {
+    border-radius: 10px;
+    width: 15%
 }
 
 .total-content{
