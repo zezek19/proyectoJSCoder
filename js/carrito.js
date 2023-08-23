@@ -25,7 +25,7 @@ const mostrarCarrito = () => {
       let carritoContent = document.createElement("div");
       carritoContent.className = "modal-content";
       carritoContent.innerHTML = `
-    <img src=" ${producto.image}">
+    <img class="modal-image" src=" ${producto.image}">
     <h3> ${producto.modelo}</h3>
     <p> ${producto.precio}</p>
     <p> Cantidad: ${producto.cantidad}
